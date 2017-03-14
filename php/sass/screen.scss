@@ -50,10 +50,24 @@ h3 {
 
 //login styles
 .login-form{
-    max-width: 150px;
-    font-size:12px;
+    max-width: 350px;
+    font-size:16px;
     font-weight: 800;
+    padding: 10px;
+    border: 3px solid $pace-yellow;
+    
+    #sub{
+        font-size:16px;
+    }
+    
+    .form-input{
+    font-size: 16px;
+    width: 15em;
+    height: 2em;
 }
+}
+
+
 
 button{
     background-color: $pace-blue;
@@ -63,10 +77,7 @@ button{
     cursor: pointer;
 }
 
-.login-form{
-    position:absolute;
-    right: 20;
-}
+
 /** LINK STYLES **/
 
 //style for unordered list of links
@@ -75,6 +86,7 @@ button{
         display: inline-block;  
     }
 }
+
 
 //basic general links
 a {
@@ -112,12 +124,13 @@ a:hover{
 }
 
 .nav-title {
-    position:absolute;
-    top:20;
-    left:20;
+    border-bottom: 1px solid black;
     
-    img {
-        max-width: 220px;
+    #logo {
+        //top:0;
+        max-width: 225px;
+        //min-width:10%;
+        //position:absolute;
     }
     h1{
         font-size: 30px;
@@ -125,6 +138,19 @@ a:hover{
         text-decoration: underline;
     }
 }
+
+/**.nav-title:after{
+    content:"\a";
+    white-space: pre;
+} **/
+
+/**.nav-title #cis101 {
+    position:absolute;
+    top:0;
+    left:35%;
+    
+} **/
+
 
 
 /** HAMBURGER MENU **/
@@ -149,7 +175,12 @@ a:hover{
 }
 
 .menu{
-    z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#fff;  position:absolute; text-align:center; font-size:14px;
+    z-index:1000000; font-weight:bold; 
+    font-size:0.8em; 
+    width:93%; 
+    background:#fff;  position:absolute; 
+    text-align:center; 
+    font-size:14px;
     }
 
 .menu ul {
@@ -246,6 +277,17 @@ background-color: $pace-blue;}
 
 //adjust for mobile sizes
 @media screen and (max-width:880px) {
+    
+    body{
+        padding: 3px;
+    }
+    
+    .nav-title{
+        h1{ font-size: 20px; }
+        #logo{
+            width: 150px;
+        }
+    }
 
     .nav-links{
         display:none;
@@ -253,7 +295,11 @@ background-color: $pace-blue;}
     
     .menu, .hamburger, .cross{
     display:block;
-}
+    }
+    
+    .menu {
+        width: 98%;
+    }
 
 }
 

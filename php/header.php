@@ -33,50 +33,33 @@
         
         <div class="head-container">
         
-            <div class="welcome" align="right">
-
-              <!-- log in form -->
-                <!--
-                <div class="logged-out">
-                <a href="#">Help</a> <a class="login-text" href="#">Log In</a> 
-                </div>
-                
-                <div class="login-form">
-                    <form>
-                        username:<br><input type="text">
-                        <br>
-                        password:<br><input type="password">
-                        
-                        <br>
-                        <button>submit</button>
-                    
-                    </form>
-                
-                </div> -->
-                
-                <!-- only show if user is logged in -->
-                <div class="logged-in">
+            <div class="welcome">
+                   <!-- only show if user is logged in -->
+                <div class="logged-in"><span style="float:right;">
                 <?php echo "$welcome"; ?><br>
                 <a href="#">Help</a> <a href="#">Logout</a> 
+                    </span>
                 </div>
+                
+                <div class="nav-title" alight="left">
+                   <div>
+                        <a href="/"><img src="img/Pace_logo.png" id="logo"></a>
+                       <h1>CIS 101 PORTAL</h1>
+                    </div>
+                </div>
+                
+                
+             
 
             </div>
 
             <div id="nav">
-                
-                <!-- when not logged in, shouldn't show any of the navigation -->
-                
-                <div class="nav-title">
-                   
-                        <a href="\"><img src="img/Pace_logo.png" align="left"></a><br><br>
-                         <a href="\"><h1>CIS 101 Portal</h1></a>
-                </div>
 
                 <center>
                 <!-- change color based on link selection -->    
-                    <br><br><br><br><br>
+                   <!-- <br><br><br><br><br> -->
                 <div class="nav-links">
-                    <hr>
+                <!--    <hr> -->
                     <br>
                     <ul>
                         <li id="nav-home"><?php 
@@ -131,7 +114,7 @@
                             echo $group; ?></li>
                     </ul>
                     <br>
-                    <hr>
+                    
                     <br>
                 </div>
                 </center>
@@ -239,13 +222,5 @@
             });
         });
         
-        //toggle login
-        $( ".login-form" ).hide();
-
-        $(".login-text").click(function(){
-            $(".login-form").slideToggle("fast");
-        });
-
-
         
     </script>

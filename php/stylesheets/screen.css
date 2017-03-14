@@ -108,12 +108,24 @@ h3 {
 
 /* line 52, ../sass/screen.scss */
 .login-form {
-  max-width: 150px;
-  font-size: 12px;
+  max-width: 350px;
+  font-size: 16px;
   font-weight: 800;
+  padding: 10px;
+  border: 3px solid #ffc61e;
+}
+/* line 59, ../sass/screen.scss */
+.login-form #sub {
+  font-size: 16px;
+}
+/* line 63, ../sass/screen.scss */
+.login-form .form-input {
+  font-size: 16px;
+  width: 15em;
+  height: 2em;
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 button {
   background-color: #01508d;
   color: #ffc61e;
@@ -122,31 +134,25 @@ button {
   cursor: pointer;
 }
 
-/* line 66, ../sass/screen.scss */
-.login-form {
-  position: absolute;
-  right: 20;
-}
-
 /** LINK STYLES **/
-/* line 74, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 .nav-links li {
   display: inline-block;
 }
 
-/* line 80, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 a {
   text-decoration: none;
   color: #01508d;
   font-weight: 700;
 }
 
-/* line 86, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 a:hover {
   color: #ffc61e;
 }
 
-/* line 91, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 #head-links {
   border: 1px solid #01508d;
   border-radius: 5px;
@@ -156,13 +162,13 @@ a:hover {
   text-decoration: none;
 }
 
-/* line 100, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 #head-links:hover {
   color: #ffc61e;
   background-color: #01508d;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 #this-link {
   border: 1px solid #01508d;
   border-radius: 5px;
@@ -171,30 +177,38 @@ a:hover {
   background-color: #01508d;
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .nav-title {
-  position: absolute;
-  top: 20;
-  left: 20;
+  border-bottom: 1px solid black;
 }
-/* line 119, ../sass/screen.scss */
-.nav-title img {
-  max-width: 220px;
+/* line 129, ../sass/screen.scss */
+.nav-title #logo {
+  max-width: 225px;
 }
-/* line 122, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 .nav-title h1 {
   font-size: 30px;
   text-transform: uppercase;
   text-decoration: underline;
 }
 
+/**.nav-title:after{
+    content:"\a";
+    white-space: pre;
+} **/
+/**.nav-title #cis101 {
+    position:absolute;
+    top:0;
+    left:35%;
+    
+} **/
 /** HAMBURGER MENU **/
-/* line 131, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 .menu, .hamburger, .cross {
   display: none;
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 .hamburger, .cross {
   background: none;
   /**position:absolute;
@@ -211,19 +225,19 @@ a:hover {
   z-index: 10000000000000;
 }
 
-/* line 151, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 .menu {
   z-index: 1000000;
   font-weight: bold;
   font-size: 0.8em;
-  width: 100%;
+  width: 93%;
   background: #fff;
   position: absolute;
   text-align: center;
   font-size: 14px;
 }
 
-/* line 155, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .menu ul {
   margin: 0;
   padding: 0;
@@ -231,13 +245,13 @@ a:hover {
   list-style-image: none;
 }
 
-/* line 160, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 .menu li {
   display: block;
   padding: 15px 0 15px 0;
 }
 
-/* line 164, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 .menu li:hover {
   display: block;
   background: #01508d;
@@ -245,40 +259,40 @@ a:hover {
   border-bottom: #01508d 1px solid;
 }
 
-/* line 169, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 .menu ul li a {
   text-decoration: none;
   margin: 0px;
   color: #fff;
 }
 
-/* line 171, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 .menu ul li a:hover {
   color: #ffc61e;
   text-decoration: none;
 }
 
-/* line 173, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 .menu a {
   text-decoration: none;
   color: #01508d;
 }
 
-/* line 174, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 .menu a:hover {
   text-decoration: none;
   color: #ffc61e;
   background-color: #01508d;
 }
 
-/* line 178, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 .this-menu {
   background-color: #01508d;
   color: #ffc61e;
   font-weight: 800;
 }
 
-/* line 185, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 .class-content {
   display: flex;
   flex-wrap: wrap;
@@ -286,7 +300,7 @@ a:hover {
   justify-content: center;
 }
 
-/* line 194, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 .box {
   background-color: white;
   border: 1px solid black;
@@ -298,7 +312,7 @@ a:hover {
 }
 
 /** index page **/
-/* line 206, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 .box > h2 {
   text-decoration: underline;
   text-transform: uppercase;
@@ -306,18 +320,18 @@ a:hover {
   font-weight: 900;
 }
 
-/* line 213, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 .box > a {
   font-style: italic;
 }
 
 /** announcement page **/
-/* line 218, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 .all-updates {
   padding: 15px;
 }
 
-/* line 222, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 .current-update {
   padding: 30px;
   border: #01508d 5px solid;
@@ -325,7 +339,7 @@ a:hover {
   text-align: left;
 }
 
-/* line 229, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 .prev-update {
   padding: 30px;
   border: #b1b1b1 1px solid;
@@ -334,24 +348,43 @@ a:hover {
   margin-top: 50px;
 }
 
-/* line 237, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 .update {
   margin-top: 20px;
 }
 
-/* line 242, ../sass/screen.scss */
+/* line 273, ../sass/screen.scss */
 .dload img {
   max-height: 18px;
 }
 
 @media screen and (max-width: 880px) {
-  /* line 250, ../sass/screen.scss */
+  /* line 281, ../sass/screen.scss */
+  body {
+    padding: 3px;
+  }
+
+  /* line 286, ../sass/screen.scss */
+  .nav-title h1 {
+    font-size: 20px;
+  }
+  /* line 287, ../sass/screen.scss */
+  .nav-title #logo {
+    width: 150px;
+  }
+
+  /* line 292, ../sass/screen.scss */
   .nav-links {
     display: none;
   }
 
-  /* line 254, ../sass/screen.scss */
+  /* line 296, ../sass/screen.scss */
   .menu, .hamburger, .cross {
     display: block;
+  }
+
+  /* line 300, ../sass/screen.scss */
+  .menu {
+    width: 98%;
   }
 }
