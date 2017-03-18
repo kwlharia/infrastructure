@@ -1,0 +1,46 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+//colors
+$pace-blue: #01508d;
+$pace-yellow: #ffc61e;
+$bg-light: #e8ecf5;
+
+//fonts
+$roboto-sans: 'Roboto', sans-serif;
+$bold: 700;
+
+.forum-post-group {
+  background-color: $bg-light;
+  padding: 1em;
+  margin-bottom: 1.5em;
+}
+
+.forum-title-group {
+  display: flex;
+  align-items: baseline;
+}
+
+.forum-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.forum-date {
+  font-size: .8em;
+  font-weight: 300;
+  margin-left: 1em;
+}
+
+.forum-preview {
+  margin-top: .5em;
+}
+
+.forum-replies {
+  font-size: .8em;
+  font-weight: 300;
+  margin-top: .5em;
+}
+    

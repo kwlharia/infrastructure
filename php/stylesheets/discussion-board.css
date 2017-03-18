@@ -1,0 +1,41 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 15, ../sass/discussion-board.scss */
+.forum-post-group {
+  background-color: #e8ecf5;
+  padding: 1em;
+  margin-bottom: 1.5em;
+}
+
+/* line 21, ../sass/discussion-board.scss */
+.forum-title-group {
+  display: flex;
+  align-items: baseline;
+}
+
+/* line 26, ../sass/discussion-board.scss */
+.forum-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* line 31, ../sass/discussion-board.scss */
+.forum-date {
+  font-size: .8em;
+  font-weight: 300;
+  margin-left: 1em;
+}
+
+/* line 37, ../sass/discussion-board.scss */
+.forum-preview {
+  margin-top: .5em;
+}
+
+/* line 41, ../sass/discussion-board.scss */
+.forum-replies {
+  font-size: .8em;
+  font-weight: 300;
+  margin-top: .5em;
+}
