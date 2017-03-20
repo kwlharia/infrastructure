@@ -17,9 +17,9 @@
     $home = "<a id='head-links' href='\'>Home</a>";
     $ann = "<a id='head-links' href='ann.php'>Announcements</a>";
     $assn = "<a id='head-links' href='assn.php'>Assignments</a>";
-    $grade = "<a id='head-links' href='grades.php'>Grades/Attendance</a>";
+    $grade = "<a id='head-links' href='/grades.php'>Grades/Attendance</a>";
     $material = "<a id='head-links' href='material.php'>Course Material</a>";
-    $disc = "<a id='head-links' href='disc.php'>Discussion Board</a>";
+    $disc = "<a id='head-links' href='discussion'>Discussion Board</a>";
     $group = "<a id='head-links' href='group.php'>Group Project</a>";
     
     $help = "<a id='thin-link' href='#'>Help</a>";
@@ -43,7 +43,7 @@
                 
                 <div class="nav-title" alight="left">
                    <div>
-                        <a href="/"><img src="img/Pace_logo.png" id="logo"></a>
+                        <a href="/"><img src="/img/Pace_logo.png" id="logo"></a>
                        <h1>CIS 101 PORTAL</h1>
                     </div>
                 </div>
