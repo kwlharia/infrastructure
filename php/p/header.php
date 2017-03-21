@@ -1,22 +1,25 @@
 <html>
     <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/screen.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         
 
         
     <?php
+        
+        include('../db.php');
     
     $title = "CIS 101 Portal";
-    $studentName = "Student" . "!"; //link to user name in database
-    $welcome = "Welcome " . $studentName;
+    $name = "Professor" . "!"; //link to user first name in database
+    $welcome = "Welcome " . $name;
     
     
     //navigation links
-    $home = "<a id='head-links' href='\'>Home</a>";
+    $home = "<a id='head-links' href='class1.php'>Home</a>";
     $ann = "<a id='head-links' href='ann.php'>Announcements</a>";
     $assn = "<a id='head-links' href='assn.php'>Assignments</a>";
+    $students = "<a id='head-links' href='students.php'>Students</a>";
     $grade = "<a id='head-links' href='grades.php'>Grades/Attendance</a>";
     $material = "<a id='head-links' href='material.php'>Course Material</a>";
     $disc = "<a id='head-links' href='disc.php'>Discussion Board</a>";
@@ -43,8 +46,14 @@
                 
                 <div class="nav-title" alight="left">
                    <div>
-                        <a href="/"><img src="img/Pace_logo.png" id="logo"></a>
+                        <a href="index.php"><img src="../img/Pace_logo.png" id="logo"></a>
                        <h1>CIS 101 PORTAL</h1>
+                       
+                       <?php 
+                        if($displayClass == true) {
+                            echo "<h1 id='class-name'>$className</h1>";
+                        }
+                       ?>
                     </div>
                 </div>
                 
@@ -57,15 +66,18 @@
 
                 <center>
                 <!-- change color based on link selection -->    
-                   <!-- <br><br><br><br><br> -->
-                <div class="nav-links">
+                 
+                <div class="nav-links" <?php if($showNav==false){
+                        echo 'style="display:none"';
+                    } ?>>
                 <!--    <hr> -->
                     <br>
                     <ul>
                         <li id="nav-home"><?php 
                             
+                            //PROGRAMMATICALLY ADD IN CORRECT CLASS LINK
                             if ($thisPage == "Home") {
-                            $home = "<a id='this-link' href='\'>Home</a>"; }
+                            $home = "<a id='this-link' href='class1.php'>Home</a>"; }
                         echo $home; ?></li>
                         
                         <li id="nav-ann"><?php 
@@ -82,6 +94,13 @@
                             $assn = "<a id='this-link' href='assn.php'>Assignments</a>"; }
                             
                             echo $assn; ?></li>
+                        
+                        <li id="nav-students"><?php 
+                            
+                            if ($thisPage == "Students") {
+                            $students = "<a id='this-link' href='students.php'>Students</a>"; }
+                            
+                            echo $students; ?></li>
                         
                         <li id="nav-grade"><?php 
                             
@@ -114,21 +133,22 @@
                             echo $group; ?></li>
                     </ul>
                     <br>
-                    
-                    <br>
+                
                 </div>
                 </center>
 
             
             </div>
         
-            <button class="hamburger">&#9776;</button>
+            <button class="hamburger" <?php if($showNav==false){
+                        echo 'style="display:none"';
+                    } ?>>&#9776;</button>
             <button class="cross">x</button>
             <div class="menu">
 
                 
               <ul>
-                <a href="\"><?
+                <a href="index.php"><?
                     if($thisPage=="Home") {
                         echo "<li class='this-menu'>Home</li>";
                     } else {
@@ -155,6 +175,16 @@
                         echo "<li class='this-menu'>Assignments</li>";
                     } else {
                         echo "<li>Assignments</li>";
+                    }
+                    ?>
+                    </a>
+                
+                <a href="students.php">
+                    <?
+                    if($thisPage=="Students") {
+                        echo "<li class='this-menu'>Students</li>";
+                    } else {
+                        echo "<li>Students</li>";
                     }
                     ?>
                     </a>

@@ -10,10 +10,10 @@
     At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
     
     <br>
-    <p class='dload'><a href='#'><img src='img/dload.png'>Document_File_32364.docx</a></p>
-    <p class='dload'><a href='#'><img src='img/excel.png'>Excel_File_48283.xlsx</a></p>
-    <p class='dload'><a href='#'><img src='img/html.png'>Homework_File_12345.html</a></p>
-    <p class='dload'><a href='#'><img src='img/video.png'>Video_File_85684.mov</a></p>
+    <p class='dload'><a href='#'><img src='../img/dload.png'>Document_File_32364.docx</a></p>
+    <p class='dload'><a href='#'><img src='../img/excel.png'>Excel_File_48283.xlsx</a></p>
+    <p class='dload'><a href='#'><img src='../img/html.png'>Homework_File_12345.html</a></p>
+    <p class='dload'><a href='#'><img src='../img/video.png'>Video_File_85684.mov</a></p>
     ";
 
     $oldAssnDesc = "Integer aliquam ornare augue, vitae placerat sem tristique eu. Maecenas molestie ut mi non rhoncus. Aliquam erat volutpat. Nullam dignissim turpis velit, eget consequat metus semper sed. Duis est risus, vulputate non tristique eu, eleifend sit amet ex. Curabitur dictum lectus nec egestas commodo. Nam eu aliquet magna. Morbi eleifend non dolor sit amet ullamcorper. 
@@ -21,9 +21,9 @@
     <br><Br>Aenean porta dui quis neque posuere malesuada. Integer imperdiet velit ut maximus porttitor. Cras id dictum eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque feugiat ante et neque rhoncus porta. Duis eu diam mi. Suspendisse vehicula enim at dolor rutrum luctus. 
     
     <br>
-    <p class='dload'><a href='#'><img src='img/dload.png'>Document_File_32364.docx</a></p><p class='dload'><a href='#'><img src='img/excel.png'>Excel_File_48283.xlsx</a></p>
-    <p class='dload'><a href='#'><img src='img/html.png'>Homework_File_12345.html</a></p>
-    <p class='dload'><a href='#'><img src='img/video.png'>YouTube Link</a></p> <br><br><hr>";
+    <p class='dload'><a href='#'><img src='../img/dload.png'>Document_File_32364.docx</a></p><p class='dload'><a href='#'><img src='../img/excel.png'>Excel_File_48283.xlsx</a></p>
+    <p class='dload'><a href='#'><img src='../img/html.png'>Homework_File_12345.html</a></p>
+    <p class='dload'><a href='#'><img src='../img/video.png'>YouTube Link</a></p> <br><br><hr>";
 
     $update = "<h2>" . $assnTitle . "</h2>" . $date . "<br>" . $assnDesc;
 
